@@ -18,9 +18,10 @@ body{
                     color: #04b4e0;
                 }
                 a{
+                    transition: .5s;
                     &:hover{
                         color: #04b4e0;
-                        transition-duration: 20ms;
+                        transition-duration: .5s;
                     }
                     color: #fff;
                     font-weight: 600;
@@ -39,6 +40,9 @@ body{
         background-color: #444444;
         .footer{
             position: relative;
+            p{
+                font-weight: 600;
+            }
         }
         .head-photo{
             position: relative;
@@ -73,12 +77,38 @@ body{
     }
 }
 .body{
-    &:hover{
-        overflow-y: scroll;
-        overflow-x: hidden;
+    padding: 60px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    .home{
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        -webkit-box-direction: normal;
+        -webkit-box-orient: horizontal;
+        -webkit-box-pack: center;
+        align-content: stretch;
+        .resume{
+            font-size: 24px;
+            border:1px solid white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: .2s;
+            &:hover{
+                background-color:#04b4e0 ;
+                text-decoration: none;
+            }
+        }
     }
     /* width */
     &::-webkit-scrollbar {
+        position: fixed;
         width: 6px;
     }
     

@@ -8,7 +8,7 @@ import Work from './Work';
 
 function Body() {
     return (
-        <div>
+        <>
             <Switch>
                 <Route path="/" component={Home} exact/>
                 <Route path="/about" component={About} exact/>
@@ -16,7 +16,7 @@ function Body() {
                 <Route path="/skills" component={Skills} exact />
                 <Route path="/contact" component={Contact} exact/>
             </Switch>
-        </div>
+        </>
     )
 }
 

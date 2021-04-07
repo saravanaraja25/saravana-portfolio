@@ -66,7 +66,7 @@ function Header({open}) {
                             </div>
                         </div>
                         <div className="mt-5 footer text-white">
-                            <p className="pt-4">© 2021 All rights reserved.</p>                            
+                            <p className="pt-4">Designed With 💙 By Saravana Raja.</p>                            
                         </div>
                     </div>
                 </div>

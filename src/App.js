@@ -10,7 +10,7 @@ function App() {
     setOpen(!open)
   }
   return (
-    <div className="App">
+    <div data-aos="fade-left" className="App ">
       <Router>
         <div className="row m-0">
           <i onClick={change} className={"ham-menu  fas fa-bars " +(open ? 'd-none' : 'd-md-none d-block')}></i>
@@ -18,7 +18,7 @@ function App() {
           <div className={"d-md-block col-md-5  m-0 " +(open ? 'd-block col-12' : 'd-none')}>            
             <Header open={setOpen}/>        
           </div>
-          <div className="body col m-0 p-0">
+          <div className="body col m-0">
             <Body />
           </div>
         </div>
