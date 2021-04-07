@@ -1,14 +1,24 @@
-import {useState} from 'react'
+import {useState,useEffect,useRef} from 'react'
 import './App.scss';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, useLocation, withRouter} from 'react-router-dom';
 import Body from './components/Body';
 import Header from './components/Header';
 
+
 function App() {
+  const myRef=useRef(null);
   const [open,setOpen]=useState(false);
   function change(){
     setOpen(!open)
   }
+  function _ScrollToTop(props) {
+    const { pathname } = useLocation();
+    useEffect(() => {
+        myRef.current.scrollTo(0, 0);
+    }, [pathname]);
+    return props.children
+  }
+  const ScrollToTop = withRouter(_ScrollToTop)
   return (
     <div data-aos="fade-left" className="App ">
       <Router>
@@ -18,8 +28,8 @@ function App() {
           <div className={"d-md-block col-md-5  m-0 " +(open ? 'd-block col-12' : 'd-none')}>            
             <Header open={setOpen}/>        
           </div>
-          <div className="body col m-0">
-            <Body />
+          <div ref={myRef} className="body col m-0">
+            <Body ScrollToTop={ScrollToTop}/>
           </div>
         </div>
       </Router>

@@ -6,15 +6,17 @@ import Home from './Home';
 import Skills from './Skills';
 import Work from './Work';
 
-function Body() {
+function Body({ScrollToTop}) {
     return (
         <>
             <Switch>
-                <Route path="/" component={Home} exact/>
-                <Route path="/about" component={About} exact/>
-                <Route path="/works" component={Work} exact/>
-                <Route path="/skills" component={Skills} exact />
-                <Route path="/contact" component={Contact} exact/>
+                <ScrollToTop>
+                    <Route path="/" component={Home} exact/>
+                    <Route path="/about" component={About} exact/>
+                    <Route path="/works" component={Work} exact/>
+                    <Route path="/skills" component={Skills} exact />
+                    <Route path="/contact" component={Contact} exact/>
+                </ScrollToTop>
             </Switch>
         </>
     )
