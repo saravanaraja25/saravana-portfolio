@@ -105,6 +105,76 @@ body{
                 text-decoration: none;
             }
         }
+        
+    }
+    .page-title{
+        position: relative;
+        display: inline;
+        &::after{
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 5px;
+            background: #04b4e0;
+            left: 0px;
+            bottom: -5px;
+            animation: line 1s;
+            @keyframes line {
+                from {width: 0%;}
+                to {top: 100%;}
+            }
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        .about{
+            overflow-x: scroll;
+        }
+    }
+    .about{
+        @media only screen and (max-width: 500px) {
+            overflow-x: scroll;
+        }
+        overflow: hidden;
+        .content{
+            h3{
+                span{
+                    color: #04b4e0;
+                }
+            }
+            p{
+                font-weight: 600;
+            }
+            table{
+                th,td{
+                    padding-bottom: 15px;
+                    font-weight: 600;
+                    // width: 1000px;
+                }
+            }
+        }
+    }
+    .contact{
+        .c-card{
+            margin-bottom: 20px;
+            i{
+                font-size: 34px;
+                margin-bottom: 20px;
+            }
+            padding: 30px 20px;
+            border:1px solid #04b4e0;
+            transition: .5s;
+            &:hover{
+                background-color: white;
+                color: #04b4e0;
+            }
+        }
+    }
+    .skills{
+        .progress-bar{
+            background-color: #04b4e0;
+            font-weight: 600;
+        }
     }
     /* width */
     &::-webkit-scrollbar {

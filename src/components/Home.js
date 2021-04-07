@@ -18,6 +18,8 @@ function Home() {
                                 typewriter                        
                                 .typeString("Full Stack Developer")
                                 .deleteAll()
+                                .typeString("Freelancer")
+                                .deleteAll()
                                 .typeString("Music Producer")
                                 .deleteAll()
                                 .start();
