@@ -171,6 +171,33 @@ body{
             }
         }
     }
+    .work{
+        .c-card{
+            img{
+                width: 100%;
+                height: auto;
+                max-height: 200px;
+            }
+            margin-bottom: 20px;
+            word-wrap: break-word;
+            i{
+                font-size: 34px;                
+                padding-right: 15px;
+            }
+            border:1px solid #04b4e0;
+            .c-content{
+                padding: 30px 20px;
+                p{
+                    font-weight: 600;
+                }
+            }
+            transition: .5s;
+            &:hover{
+                // background-color: white;
+                color: #04b4e0;
+            }
+        }
+    }
     .skills{
         .progress-bar{
             background-color: #04b4e0;

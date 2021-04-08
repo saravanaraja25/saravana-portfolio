@@ -3,6 +3,18 @@ import './App.scss';
 import {BrowserRouter as Router, useLocation, withRouter} from 'react-router-dom';
 import Body from './components/Body';
 import Header from './components/Header';
+import ReactGA from 'react-ga';
+const TRACKING_ID = "UA-45390016-3"; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
+ReactGA.event({
+  category: 'User',
+  action: 'Created an Account'
+});
+ReactGA.exception({
+  description: 'An error ocurred',
+  fatal: true
+});
+
 
 
 function App() {
@@ -13,6 +25,10 @@ function App() {
   }
   function _ScrollToTop(props) {
     const { pathname } = useLocation();
+    props.history.listen((location, action) => {
+      ReactGA.set({ page: location.pathname });
+      ReactGA.pageview(location.pathname);
+    });
     useEffect(() => {
         myRef.current.scrollTo(0, 0);
     }, [pathname]);
