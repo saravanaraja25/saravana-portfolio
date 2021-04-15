@@ -3,6 +3,7 @@ import ecom from '../img/ecom.jpg'
 import kec from '../img/kec.png'
 import covid from '../img/covid.png'
 import weather from '../img/weatherapp.png'
+import git from '../img/gitviewer.png'
 
 function Work() {
     return (
@@ -34,22 +35,34 @@ function Work() {
                     </div>
                     <div className="col-lg-6">
                         <div className="text-center c-card">
+                            <img src={ecom} alt="B2B"/>
+                            <div class="c-content">
+                                <h4>E-Commerce Application</h4>
+                                <p>Tech Stack : Laravel</p>
+                                <a target="_blank" rel="noreferrer" href="https://github.com/saravanaraja25/b2becom-laravel7"><i className="fab fa-github"></i></a>
+                                <a target="_blank" rel="noreferrer" href="https://ecom.saravanaraja.xyz"><i className="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <div className="text-center c-card">
+                            <img src={git} alt="git"/>
+                            <div class="c-content">
+                                <h4>Github User Finder</h4>
+                                <p>Tech Stack : React JS, AWS, Jenkins for CI/CD</p>
+                                <a target="_blank" rel="noreferrer" href="https://github.com/saravanaraja25/github-finder"><i className="fab fa-github"></i></a>
+                                <a target="_blank" rel="noreferrer" href="http://3.236.147.106/"><i className="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <div className="text-center c-card">
                             <img src={weather} alt="weather"/>
                             <div class="c-content">
                                 <h4>Weather Finder</h4>
                                 <p>Tech Stack : VueJS</p>
                                 <a target="_blank" rel="noreferrer" href="https://github.com/saravanaraja25/weather-app-vue"><i className="fab fa-github"></i></a>
                                 <a target="_blank" rel="noreferrer" href="https://weather.saravanaraja.xyz"><i className="fas fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6">
-                        <div className="text-center c-card">
-                            <img src={ecom} alt="B2B"/>
-                            <div class="c-content">
-                                <h4>E-Commerce Application</h4>
-                                <p>Tech Stack : Laravel</p>
-                                <a target="_blank" rel="noreferrer" href="https://github.com/saravanaraja25/b2becom-laravel7"><i className="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
