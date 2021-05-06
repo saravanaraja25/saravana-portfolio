@@ -19,9 +19,7 @@ function Home() {
                                 .typeString("Full Stack Developer")
                                 .deleteAll()
                                 .typeString("Freelancer")
-                                .deleteAll()
-                                .typeString("Music Producer")
-                                .deleteAll()
+                                .deleteAll()                               
                                 .start();
                             }}
                         />
