@@ -4,7 +4,7 @@ import {BrowserRouter as Router, useLocation, withRouter} from 'react-router-dom
 import Body from './components/Body';
 import Header from './components/Header';
 import ReactGA from 'react-ga';
-const TRACKING_ID = "UA-45390016-3"; // YOUR_OWN_TRACKING_ID
+const TRACKING_ID = process.env.REACT_APP_ANALYTICS_ID; // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 ReactGA.event({
   category: 'User',
