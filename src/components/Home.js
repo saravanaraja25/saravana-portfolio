@@ -25,7 +25,7 @@ function Home() {
                         />
                     </h3>
                     <div className="mt-5">
-                        <a target="_blank" rel="noreferrer" className="resume text-white font-weight-bold" href="https://drive.google.com/file/d/1bb-putUrcaum9vZXecxrlLNOCrW7WaYk/view?usp=sharing">Download Resume</a>
+                        <a target="_blank" rel="noreferrer" className="resume text-white font-weight-bold" href="https://drive.google.com/file/d/1fxFX2BcGmXYLGXmie9yCjeT6Y3ZE6-6N/view?usp=sharing">Download Resume</a>
                     </div>
                 </div>
             </div>
