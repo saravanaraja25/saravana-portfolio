@@ -68,7 +68,7 @@ function Work() {
                     </div>
                     <div className="col-lg-6">
                         <div className="text-center c-card">
-                            <img src="https://www.inovex.de/blog/wp-content/uploads/2019/01/Flutter-1-1-1200x675.png" alt="calc"/>
+                            <img src="https://meterpreter.org/wp-content/uploads/2018/09/flutter-720x340.png" alt="calc"/>
                             <div class="c-content">
                                 <h4>Calculator</h4>
                                 <p>Tech Stack : Flutter</p>
