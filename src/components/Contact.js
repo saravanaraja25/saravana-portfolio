@@ -15,7 +15,7 @@ function Contact() {
                     <div className="col-lg-6">
                         <div className="text-center c-card">
                             <i className="fas fa-envelope"></i>
-                            <h5>saravanaraja25@gmail.com</h5>
+                            <h5>saravanarajapp@gmail.com</h5>
                         </div>
                     </div>
                     <div className="col-lg-6">
