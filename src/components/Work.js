@@ -62,7 +62,7 @@ function Work() {
                                 <h4>Weather Finder</h4>
                                 <p>Tech Stack : VueJS</p>
                                 <a target="_blank" rel="noreferrer" href="https://github.com/saravanaraja25/weather-app-vue"><i className="fab fa-github"></i></a>
-
+                                <a target="_blank" rel="noreferrer" href="https://vue-weatherapp-saravana-raja.netlify.app"><i className="fas fa-link"></i></a>
                             </div>
                         </div>
                     </div>
